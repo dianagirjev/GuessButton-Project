@@ -18,9 +18,12 @@
           <p class="card-text">Please select one button, only one of them is a winning button, GOOD LUCK!</p>
         </div>
         <div class="card-footer text-muted">
-          <a href="#" class="btn btn-primary" onclick="return checkWinningButton(1);">Button 1</a>
-          <a href="#" class="btn btn-primary" onclick="return checkWinningButton(2);">Button 2</a>
-          <a href="#" class="btn btn-primary" onclick="return checkWinningButton(3);">Button 3</a>
+          <a href="#" class="btn btn-success" onclick="winningButton = generateWinningButton();">Start Game</a>
+        </div>
+        <div class="card-footer text-muted">
+          <a href="#" class="btn btn-primary" onclick="return checkWinningButton(1, winningButton);">Button 1</a>
+          <a href="#" class="btn btn-primary" onclick="return checkWinningButton(2, winningButton);">Button 2</a>
+          <a href="#" class="btn btn-primary" onclick="return checkWinningButton(3, winningButton);">Button 3</a>
         </div>
       </div>
     </div>
